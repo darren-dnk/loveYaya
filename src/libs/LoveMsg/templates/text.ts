@@ -26,13 +26,13 @@ export const textTemplate = (data: TextTemplateProps) => {
   if (JokeProps) {
     //     text += `
     // 彩虹屁：
-    text += `\n先给鸭鸭老婆讲个笑话:
-${JokeProps.content}\n`
+    text += `\n新的一天开始我给鸭鸭老婆讲个笑话吧~
+"${JokeProps.content}"\n`
   }
 
   if (sayLove) {
-    text += `\n再给鸭鸭老婆来句情话:
-${sayLove.content}\n`
+    text += `\n有趣吗?嘿嘿~有趣的话再给老婆展示一下我情圣写情诗的能力!!!:
+"${sayLove.content}"\n`
   }
 
   /* // 诗句
@@ -62,7 +62,7 @@ ${sayLove.content}\n`
     text += `
 『每日英语（${dayjs(dayEnglish.date).format('ll')}』${dayEnglish.content}`
   } */
-  text += '\n讲完了,希望鸭鸭老婆今天能够开开心心的,爱你哦,鸭鸭老婆!'
+  text += '\n怎么样,还阔以吧,希望鸭鸭老婆今天能够开开心心的,爱你哦,鸭鸭老婆!'
   return {
     msgtype: 'text',
     text: {
